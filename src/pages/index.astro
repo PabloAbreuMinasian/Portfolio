@@ -1,0 +1,296 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <main>
+    <Navbar />
+    <div class="video-container">
+      <video autoplay loop class="w-full video">
+        <source src="/img/video (720p).mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="container mx-auto mt-10 p-5">
+      <div class="flex items-center">
+        <h2 class="mr-4 text-4xl text-gray-500 font-bold">
+          <span class="text-red-400">&lt;h2&gt;</span>
+          <span class="text-gray-400 p-0">Sobre mi</span>
+          <span class="text-red-400">&lt;/h2&gt;</span>
+        </h2>
+        <hr class="bg-gray-600 h-0.5 flex-grow" />
+      </div>
+      <div class="grid grid-cols-12">
+        <div class="col-span-7 flex flex-col mt-3">
+          <div class="text-xl text-white">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, quod
+            dolorum quos saepe placeat voluptate at a fugit perspiciatis
+            veritatis odit ut amet cumque ullam praesentium dicta! Quam in,
+            deserunt porro possimus laudantium laboriosam, ut quibusdam maiores
+            eos cupiditate esse expedita maxime ducimus accusamus autem nostrum?
+            At laborum necessitatibus sapiente.
+          </div>
+          <div class="text-xl text-white mt-3">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi
+            libero beatae provident quisquam maxime blanditiis at, quo
+            repellendus voluptatum quam explicabo accusantium possimus nemo aut?
+            Eaque nulla tempore incidunt illum, voluptatum ipsum maiores
+            necessitatibus. Ad deserunt in minima ducimus sint?
+          </div>
+        </div>
+
+        <div class="col-span-5 flex flex-col items-center justify-center">
+          <img
+            src="/img/myAvatar.png"
+            alt=""
+            class="rounded-full border-2 border-white border-solid shadow-2xl w-20 hover:bg-white cursor-pointer"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="container mx-auto mt-10 p-5">
+      <div class="flex items-center">
+        <hr class="bg-gray-600 h-0.5 flex-grow" />
+        <h2 class="ml-4 text-4xl text-gray-500 font-bold">
+          <span class="text-yellow-500">&lt;span&gt;</span>
+          <span class="text-grey-400 p-0">Proyectos</span>
+          <span class="text-yellow-500">&lt;/span&gt;</span>
+        </h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-5">
+        <div class="card">
+          <div class="face front">
+            <img
+              src="/img/Captura de pantalla 2024-03-26 a la(s) 15.54.53.png"
+              alt="Equal Vision"
+            />
+            <h3>Equal Vision</h3>
+          </div>
+          <div class="face back">
+            <h3>Equal Vision</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Mollitia, quibusdam. Facilis ex voluptatem, officiis nihil saepe
+              quisquam quos quasi qui.
+            </p>
+            <div class="link">
+              <a href="">Detalles</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="face front">
+            <img
+              src="/img/Captura de pantalla 2024-03-26 a la(s) 15.55.43.png"
+              alt="Hackflix"
+            />
+            <h3>Hackflix</h3>
+          </div>
+          <div class="face back">
+            <h3>Hackflix</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Mollitia, quibusdam. Facilis ex voluptatem, officiis nihil saepe
+              quisquam quos quasi qui.
+            </p>
+            <div class="link">
+              <a href="">Detalles</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="face front">
+            <img
+              src="/img/Captura de pantalla 2024-03-26 a la(s) 15.57.57.png"
+              alt="Vacio"
+            />
+            <h3>Vacio</h3>
+          </div>
+          <div class="face back">
+            <h3>Vacio</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Mollitia, quibusdam. Facilis ex voluptatem, officiis nihil saepe
+              quisquam quos quasi qui.
+            </p>
+            <div class="link">
+              <a href="">Detalles</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mx-auto mt-10 p-5">
+      <div class="flex items-center">
+        <hr class="bg-gray-600 h-0.5 flex-grow" />
+        <h2 class="ml-4 mr-4 text-4xl text-gray-500 font-bold">
+          <span class="text-purple-500">return</span>
+          <span class="text-red-400 p-0">Habilidades blandas</span>
+        </h2>
+        <hr class="bg-gray-600 h-0.5 flex-grow" />
+      </div>
+      <section class="mt-5">
+        <img src="/img/Liderazgo.png" alt="Creatividad img" />
+        <img src="/img/Comunicacion.png" alt="Capacidad resolutiva img" />
+        <img src="/img/Res. de problemas.png" alt="Gestion del tiempo img" />
+        <img src="/img/Trabajo en equipo.png" alt="Comunicacion img" />
+        <img src="/img/Adaptabilidad.png" alt="Liderazgo img" />
+      </section>
+    </div>
+    <div class="container mx-auto mt-10 p-5">
+      <div class="flex items-center">
+        <hr class="bg-gray-600 h-0.5 flex-grow" />
+        <h2 class="ml-4 mr-4 text-4xl text-gray-500 font-bold">
+          <span class="text-yellow-500">console</span>.
+          <span class="text-blue-400 p-0">log</span>
+          <span class="text-yellow-500">(</span>
+          <span class="text-green-500">"Habilidades"</span>
+          <span class="text-yellow-500">)</span>
+        </h2>
+        <hr class="bg-gray-600 h-0.5 flex-grow" />
+      </div>
+      <div></div>
+    </div>
+    <Footer />
+  </main>
+
+  <style>
+    .video {
+      height: 500px;
+      object-fit: cover;
+    }
+
+    section {
+      display: flex;
+
+      height: 430px;
+    }
+
+    .video-container {
+      position: relative;
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+    }
+
+    .video-container::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0),
+        rgba(14, 24, 39, 0),
+        rgba(14, 24, 39, 0.5),
+        rgba(14, 24, 39, 0.7),
+        rgba(17, 24, 39, 0.9)
+      );
+    }
+
+    section img {
+      width: 0px;
+      flex-grow: 1;
+      object-fit: cover;
+      opacity: 0.8;
+      transition: 0.5s ease;
+    }
+
+    section img:hover {
+      cursor: pointer;
+      width: 300px;
+      opacity: 1;
+      filter: contrast(120%);
+    }
+
+    .shadow-section {
+      box-shadow: 0px 10px 20px rgba(140, 161, 164, 0.2);
+    }
+
+    .card {
+      position: relative;
+      width: 100%;
+      height: 350px;
+    }
+
+    .card .face {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: 0.5s;
+    }
+
+    .card .front {
+      transform: perspective(600px) rotateY(0deg);
+      box-shadow: 0 5px 10px #000;
+    }
+
+    .card .front img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .card .front h3 {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 45px;
+      line-height: 45px;
+      color: #fff;
+      background: rgba(0, 0, 0, 0.815);
+      text-align: center;
+    }
+
+    .card .back {
+      transform: perspective(600px) rotateY(180deg);
+      background: rgb(3, 35, 54);
+      padding: 15px;
+      color: #f3f3f3;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: center;
+      box-shadow: 0 5px 10px #000;
+    }
+
+    .card .back .link {
+      border-top: solid 1px #f3f3f3;
+      height: 50px;
+      line-height: 50px;
+    }
+
+    .card .back .link a {
+      color: #f3f3f3;
+    }
+
+    .card .back h3 {
+      font-size: 30px;
+      margin-top: 20px;
+      letter-spacing: 2px;
+    }
+
+    .card .back p {
+      letter-spacing: 1px;
+    }
+
+    .card:hover .front {
+      transform: perspective(600px) rotateY(180deg);
+    }
+
+    .card:hover .back {
+      transform: perspective(600px) rotateY(360deg);
+    }
+  </style>
+</Layout>
