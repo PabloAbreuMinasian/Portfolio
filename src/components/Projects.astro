@@ -1,0 +1,159 @@
+---
+
+---
+
+<div class="container mx-auto mt-10 p-5">
+  <div class="flex items-center">
+    <hr class="bg-gray-600 h-0.5 flex-grow" />
+    <h2 class="ml-4 text-base md:text-4xl text-gray-500 font-bold">
+      <span class="text-yellow-500">&lt;span&gt;</span>
+      <span class="text-grey-400 p-0">Proyectos</span>
+      <span class="text-yellow-500">&lt;/span&gt;</span>
+    </h2>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-5">
+    <div class="card">
+      <div class="face front">
+        <img
+          src="/img/Captura de pantalla 2024-03-26 a la(s) 15.54.53.png"
+          alt="Equal Vision"
+        />
+        <h3>Equal Vision</h3>
+      </div>
+      <div class="face back">
+        <h3>Equal Vision</h3>
+        <p class="text-base md:text-sm lg:text-base">
+          Discográfica especializada en la venta de vinilos, discos y
+          cassettes.Los usuarios pueden iniciar sesión para realizar compras,
+          mientras que los administradores tienen acceso a estadísticas y datos
+          relevantes del negocio.
+        </p>
+        <div class="link">
+          <a href="">Ver sitio</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="face front">
+        <img
+          src="/img/Captura de pantalla 2024-03-26 a la(s) 15.55.43.png"
+          alt="Hackflix"
+        />
+        <h3>Hackflix</h3>
+      </div>
+      <div class="face back">
+        <h3>Hackflix</h3>
+        <p class="text-base md:text-sm lg:text-base">
+          Hackflix es una plataforma de streaming de películas. Inspirada en el
+          estilo de Netflix, nuestra plataforma te permite buscar películas por
+          nombre y filtrarlas por estrellas para encontrar fácilmente lo que
+          quieres ver.
+        </p>
+        <div class="link">
+          <a href="">Ver sitio</a>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="face front">
+        <img src="/img/Ejemplo.jpeg" alt="Vacio" />
+        <h3>Vacio</h3>
+      </div>
+      <div class="face back">
+        <h3>Vacio</h3>
+        <p class="text-base md:text-sm lg:text-base">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia,
+          quibusdam. Facilis ex voluptatem, officiis nihil saepe quisquam quos
+          quasi qui.
+        </p>
+        <div class="link">
+          <a href="">Ver sitio</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="habilidades-blandas">
+    <p></p>
+  </div>
+</div>
+
+<style>
+  .card {
+    position: relative;
+    width: 100%;
+    height: 350px;
+  }
+
+  .card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+
+  .card .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+  }
+
+  .card .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .card .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.815);
+    text-align: center;
+  }
+
+  .card .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+  }
+
+  .card .back .link {
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+  }
+
+  .card .back .link a {
+    color: #f3f3f3;
+  }
+
+  .card .back h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+  }
+
+  .card .back p {
+    letter-spacing: 1px;
+  }
+
+  .card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+  }
+
+  .card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+  }
+</style>

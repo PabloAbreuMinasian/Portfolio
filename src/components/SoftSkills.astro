@@ -1,0 +1,137 @@
+---
+
+---
+
+<div class="container mx-auto mt-10 p-5">
+  <div class="flex items-center">
+    <hr class="bg-gray-600 h-0.5 flex-grow" />
+    <h2 class="ml-4 mr-4 text-base md:text-4xl text-gray-500 font-bold">
+      <span class="text-purple-500">return</span>
+      <span class="text-red-400 p-0">Habilidades blandas</span>
+    </h2>
+    <hr class="bg-gray-600 h-0.5 flex-grow" />
+  </div>
+  <section class="mt-5 flex flex-col md:flex-row h-96">
+    <div class="image-container relative flex-grow overflow-hidden">
+      <img
+        class="w-full md:w-72 h-96 flex-grow object-cover opacity-100 transition duration-500 ease-in-out"
+        src="/img/liderazgo.jpg"
+        alt="Liderazgo"
+      />
+      <div
+        class="image-title absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 text-white text-center transition-opacity no-pointer-events"
+      >
+        <h3 class="text-xl font-bold mb-2">Liderazgo</h3>
+        <p>
+          Ser líder es esencial para mí, siendo la clave para inspirar, motivar
+          y lograr objetivos conjuntos.
+        </p>
+      </div>
+    </div>
+    <div class="image-container relative flex-grow overflow-hidden">
+      <img
+        class="w-full md:w-72 h-96 flex-grow object-cover opacity-100 transition duration-500 ease-in-out"
+        src="/img/comunicacion.webp"
+        alt="Comunicacion"
+      />
+      <div
+        class="image-title absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 text-white text-center transition-opacity no-pointer-events"
+      >
+        <h3 class="text-xl font-bold mb-2">Comunicación</h3>
+        <p>
+          Me considero una persona sociable, lo que me ha permitido desarrollar
+          habilidades de comunicación efectiva y establecer conexiones
+          significativas en diversas situaciones.
+        </p>
+      </div>
+    </div>
+    <div class="image-container relative flex-grow overflow-hidden">
+      <img
+        class="w-full md:w-72 h-96 flex-grow object-cover opacity-100 transition duration-500 ease-in-out"
+        src="/img/gestion-del-tiempo.jpg"
+        alt="Gestion del tiempo img"
+      />
+      <div
+        class="image-title absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 text-white text-center transition-opacity no-pointer-events"
+      >
+        <h3 class="text-xl font-bold mb-2">Gestión del tiempo</h3>
+        <p>
+          Considero que el tiempo es nuestro recurso más valioso. Por eso, me
+          esfuerzo en gestionarlo, aplicando técnicas para maximizar mi
+          productividad y aprovechamiento del tiempo.
+        </p>
+      </div>
+    </div>
+    <div class="image-container relative flex-grow overflow-hidden">
+      <img
+        class="w-full md:w-72 h-96 flex-grow object-cover opacity-100 transition duration-500 ease-in-out"
+        src="/img/trabajo-en-equipo.jpg"
+        alt="Trabajo en equipo img"
+      />
+      <div
+        class="image-title absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 text-white text-center transition-opacity no-pointer-events"
+      >
+        <h3 class="text-xl font-bold mb-2">Trabajo en equipo</h3>
+        <p>
+          Disfruto mucho de trabajar en equipo. Valorando la importancia del
+          trabajo en equipo, siempre busco fomentar la colaboración y el
+          compañerismo en el grupo.
+        </p>
+      </div>
+    </div>
+    <div class="image-container relative flex-grow overflow-hidden">
+      <img
+        class="w-full md:w-72 h-96 flex-grow object-cover opacity-100 transition duration-500 ease-in-out"
+        src="/img/adaptabilidad.jpeg"
+        alt="Adaptabilidad"
+      />
+      <div
+        class="image-title absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 text-white text-center transition-opacity no-pointer-events"
+      >
+        <h3 class="text-xl font-bold mb-2">Adaptabilidad</h3>
+        <p>
+          Me caracterizo por mi capacidad de adaptación a entornos cambiantes,
+          lo que me permite enfrentar desafíos con flexibilidad y determinación.
+        </p>
+      </div>
+    </div>
+  </section>
+  <div id="projects">
+    <p></p>
+  </div>
+</div>
+
+<style>
+  .image-container:hover .image-title {
+    opacity: 1;
+  }
+
+  section img {
+    transition: 1s ease;
+  }
+
+  section img:hover {
+    cursor: pointer;
+    width: 80rem;
+    opacity: 0.4;
+    filter: contrast(120%);
+  }
+
+  .image-container:hover .image-title.no-pointer-events {
+    pointer-events: none;
+  }
+
+  /* CSS para dispositivos móviles */
+  @media (max-width: 767px) {
+    section {
+      flex-direction: column; /* Cambiar la dirección de la fila a columna */
+      height: auto; /* Permitir que la altura del contenedor se ajuste automáticamente */
+    }
+
+    .image-container {
+      width: 100%; /* Ancho completo en dispositivos móviles */
+      height: auto; /* Altura automática en dispositivos móviles */
+      margin-bottom: 1rem; /* Espaciado entre las imágenes en dispositivos móviles */
+    }
+  }
+</style>
