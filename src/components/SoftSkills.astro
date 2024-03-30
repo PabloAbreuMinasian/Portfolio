@@ -11,8 +11,20 @@
     </h2>
     <hr class="bg-gray-600 h-0.5 flex-grow" />
   </div>
-  <section class="mt-5 flex flex-col md:flex-row h-96">
-    <div class="image-container relative flex-grow overflow-hidden">
+  <div class="text-white text-center text-lg p-4">
+    <p>
+      El éxito profesional va más allá de las habilidades técnicas. Las
+      habilidades blandas, son fundamentales para sobresalir en cualquier campo.
+      En mi trayectoria, he cultivado estas habilidades de manera constante,
+      reconociendo su papel crucial en la entrega de resultados excepcionales y
+      en la construcción de relaciones sólidas tanto dentro como fuera del
+      entorno laboral.
+    </p>
+  </div>
+  <section class="mt-5 flex flex-col h-auto md:flex-row md:h-96 border">
+    <div
+      class="image-container w-full md:w-auto relative flex-grow overflow-hidden"
+    >
       <img
         class="w-full md:w-72 h-96 flex-grow object-cover opacity-100 transition duration-500 ease-in-out"
         src="/img/liderazgo.jpg"
@@ -28,7 +40,9 @@
         </p>
       </div>
     </div>
-    <div class="image-container relative flex-grow overflow-hidden">
+    <div
+      class="image-container w-full md:w-auto relative flex-grow overflow-hidden"
+    >
       <img
         class="w-full md:w-72 h-96 flex-grow object-cover opacity-100 transition duration-500 ease-in-out"
         src="/img/comunicacion.webp"
@@ -45,7 +59,9 @@
         </p>
       </div>
     </div>
-    <div class="image-container relative flex-grow overflow-hidden">
+    <div
+      class="image-container w-full md:w-auto relative flex-grow overflow-hidden"
+    >
       <img
         class="w-full md:w-72 h-96 flex-grow object-cover opacity-100 transition duration-500 ease-in-out"
         src="/img/gestion-del-tiempo.jpg"
@@ -62,7 +78,9 @@
         </p>
       </div>
     </div>
-    <div class="image-container relative flex-grow overflow-hidden">
+    <div
+      class="image-container w-full md:w-auto relative flex-grow overflow-hidden"
+    >
       <img
         class="w-full md:w-72 h-96 flex-grow object-cover opacity-100 transition duration-500 ease-in-out"
         src="/img/trabajo-en-equipo.jpg"
@@ -79,7 +97,9 @@
         </p>
       </div>
     </div>
-    <div class="image-container relative flex-grow overflow-hidden">
+    <div
+      class="image-container w-full md:w-auto relative flex-grow overflow-hidden"
+    >
       <img
         class="w-full md:w-72 h-96 flex-grow object-cover opacity-100 transition duration-500 ease-in-out"
         src="/img/adaptabilidad.jpeg"
@@ -119,19 +139,5 @@
 
   .image-container:hover .image-title.no-pointer-events {
     pointer-events: none;
-  }
-
-  /* CSS para dispositivos móviles */
-  @media (max-width: 767px) {
-    section {
-      flex-direction: column; /* Cambiar la dirección de la fila a columna */
-      height: auto; /* Permitir que la altura del contenedor se ajuste automáticamente */
-    }
-
-    .image-container {
-      width: 100%; /* Ancho completo en dispositivos móviles */
-      height: auto; /* Altura automática en dispositivos móviles */
-      margin-bottom: 1rem; /* Espaciado entre las imágenes en dispositivos móviles */
-    }
   }
 </style>
