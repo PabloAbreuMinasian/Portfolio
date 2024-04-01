@@ -1,5 +1,5 @@
 ---
-
+import { Icon } from "astro-icon/components";
 ---
 
 <div class="container mx-auto mt-10 p-5">
@@ -14,4 +14,122 @@
     </h2>
     <hr class="bg-gray-600 h-0.5 flex-grow" />
   </div>
+  <div class="grid grid-cols-12">
+    <div
+      class="mt-0 md:mt-32 lg:mt-8 xl:mt-0 col-span-12 md:col-span-7 icon-circle flex justify-center items-center relative"
+    >
+      <Icon
+        name="css"
+        class="w-12 h-12 absolute icon p-0.5 rounded-full border border-solid border-white hover:bg-blue-500"
+      />
+      <Icon
+        name="html"
+        class="w-12 h-12 absolute icon p-0.5 rounded-full border border-solid border-white hover:bg-orange-500"
+      />
+      <Icon
+        name="react"
+        class="w-12 h-12 absolute icon p-0.5 rounded-full border border-solid border-white hover:bg-white"
+      />
+      <Icon
+        name="javaScript"
+        class="w-12 h-12 absolute icon p-1 rounded-full border border-solid border-white hover:bg-yellow-300"
+      />
+      <Icon
+        name="tailwind"
+        class="w-12 h-12 absolute icon p-0.5 rounded-full border border-solid border-white hover:bg-white"
+      />
+      <Icon
+        name="bootstrap"
+        class="w-12 h-12 absolute icon p-0.5 rounded-full border border-solid border-white hover:bg-blue-500"
+      />
+      <Icon
+        name="mongoDB"
+        class="w-12 h-12 absolute icon p-1 rounded-full border border-solid border-white hover:bg-green-500"
+      />
+      <Icon
+        name="sequelize"
+        class="w-12 h-12 absolute icon p-0.5 rounded-full border border-solid border-white hover:bg-blue-500"
+      />
+      <Icon
+        name="typeScript"
+        class="w-12 h-12 absolute icon p-0.5 rounded-full border border-solid border-white hover:bg-blue-500"
+      /><Icon
+        name="astro"
+        class="w-12 h-12 absolute icon p-0.5 rounded-full border border-solid border-white hover:bg-blue-500"
+      /><Icon
+        name="node"
+        class="w-12 h-12 absolute icon p-0.5 rounded-full border border-solid border-white hover:bg-green-800"
+      /><Icon
+        name="github"
+        class="w-12 h-12 absolute icon p-0.5 rounded-full border border-solid border-white hover:bg-white"
+      />
+    </div>
+    <div class="col-span-12 md:col-span-5">
+      <p class="text-base md:text-xl text-white mt-8">
+        Con habilidades sólidas en JavaScript, React y una variedad de otras
+        tecnologías como HTML, CSS, y frameworks como Bootstrap y Tailwind, he
+        desarrollado una sólida comprensión de la construcción de aplicaciones
+        web modernas. Mi experiencia en el desarrollo de aplicaciones frontend y
+        backend utilizando Node.js, así como bases de datos como MongoDB y
+        Sequelize, me ha permitido crear soluciones robustas y escalables.
+        Además, mi familiaridad con herramientas de control de versiones como
+        GitHub y la creación de aplicaciones estáticas con Astro, me ha
+        posicionado para abordar desafíos complejos con creatividad y
+        eficiencia.
+      </p>
+    </div>
+  </div>
 </div>
+
+<style>
+  .icon-circle {
+    height: 400px;
+    /* animation: rotateCircle 10s linear infinite; */
+  }
+  /* 
+  @keyframes rotateCircle {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  } */
+
+  .icon:nth-child(1) {
+    transform: rotate(30deg) translateY(-145px) rotate(-30deg);
+  }
+  .icon:nth-child(2) {
+    transform: rotate(60deg) translateY(-145px) rotate(-60deg);
+  }
+  .icon:nth-child(3) {
+    transform: rotate(90deg) translateY(-135px) rotate(-90deg);
+  }
+  .icon:nth-child(4) {
+    transform: rotate(120deg) translateY(-145px) rotate(-120deg);
+  }
+  .icon:nth-child(5) {
+    transform: rotate(150deg) translateY(-145px) rotate(-150deg);
+  }
+  .icon:nth-child(6) {
+    transform: rotate(180deg) translateY(-145px) rotate(-180deg);
+  }
+  .icon:nth-child(7) {
+    transform: rotate(210deg) translateY(-145px) rotate(-210deg);
+  }
+  .icon:nth-child(8) {
+    transform: rotate(240deg) translateY(-145px) rotate(-240deg);
+  }
+  .icon:nth-child(9) {
+    transform: rotate(270deg) translateY(-135px) rotate(-270deg);
+  }
+  .icon:nth-child(10) {
+    transform: rotate(300deg) translateY(-145px) rotate(-300deg);
+  }
+  .icon:nth-child(11) {
+    transform: rotate(330deg) translateY(-145px) rotate(-330deg);
+  }
+  .icon:nth-child(12) {
+    transform: rotate(360deg) translateY(-145px) rotate(-360deg);
+  }
+</style>
