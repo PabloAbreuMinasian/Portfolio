@@ -2,7 +2,7 @@
 
 ---
 
-<div class="video-container relative overflow-hidden w-full h-auto">
+<div class="video-container relative overflow-hidden w-full">
   <!-- <video autoplay loop class="w-full video">
       <source src="/img/video (720p).mp4" type="video/mp4" />
       Your browser does not support the video tag.
@@ -23,21 +23,16 @@
     height: 500px;
     object-fit: cover;
     object-position: center top;
-  } */
-  /* 
+  }  */
+
   .video-container {
-    position: relative;
-    opacity: 0.9;
-    width: 100%;
-    height: 640px;
-    overflow: hidden;
+    height: 100vh;
   }
 
   .video-play {
-    width: 100%;
-    height: 100%;
+    height: 100vh;
     object-fit: cover;
-  } */
+  }
 
   .video-container::before {
     content: "";
@@ -45,7 +40,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-image: linear-gradient(
       to bottom,
       rgba(14, 24, 39, 0),
