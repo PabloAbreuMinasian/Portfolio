@@ -32,11 +32,10 @@
     <div
       class="col-span-12 mt-14 md:col-span-5 md:mt-0 flex flex-col items-center justify-center"
     >
-      <img
-        src="/img/myAvatar.png"
-        alt=""
-        class="rounded-full border-2 border-white border-solid shadow-2xl w-20 hover:bg-white cursor-pointer rotate-hover"
-      />
+      <article class="relative">
+        <img src="/img/IMG_0836-removebg-preview.png" alt="" />
+        <img src="/img/IMG_0808-removebg-preview.png" alt="" />
+      </article>
     </div>
   </div>
   <div id="proyectos">
@@ -51,5 +50,61 @@
 
   .rotate-hover:hover {
     transform: rotate(360deg) scale(2);
+  }
+
+  article {
+    width: 250px;
+    transition: all 0.3s ease;
+  }
+
+  article img:first-child {
+    box-shadow: 0 60px 60px -60px rgb(150, 150, 212);
+    border-radius: 4px;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  article img:last-child {
+    position: absolute;
+
+    height: 250px;
+    object-fit: cover;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateY(25%);
+    transition: 0.3s ease;
+    opacity: 0;
+  }
+
+  article:hover {
+    transform: perspective(250px) rotateX(10deg) translateY(-5%) translateZ(0);
+  }
+
+  article::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(
+      to bottom,
+      transparent 10%,
+      rgba(0, 0, 0, 0.5) 50%,
+      rgba(11, 33, 83, 0.45) 95%
+    );
+
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+
+  article:hover::before {
+    opacity: 1;
+  }
+
+  article:hover img:last-child {
+    opacity: 1;
+    transform: translateY(10%);
   }
 </style>
